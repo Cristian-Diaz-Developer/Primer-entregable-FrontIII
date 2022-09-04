@@ -5,13 +5,17 @@
 // Maqueta de Cabecera:
 //    h1
 //    p > span     (el span mostrará la cantidad recibida por props)
-import React from 'react';
-export default function Cabecera({counterProduct}) {
+import React from 'react'
+export default function Cabecera({itemsCompra}) {
   
   return (
     <header>
-        <h1>Carrito de compras</h1>
-        <p>Cantidad de productos <span>{counterProduct}</span></p>
+      <h1>Carrito de compras</h1>
+      <p>
+        Cantidad de productos{'  '}
+        <span>{itemsCompra}</span>
+      </p>
+        {/* maquetar Cabecera aquí */}
     </header>
-  );
+  )
 }
